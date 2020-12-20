@@ -34,5 +34,6 @@ public class Publisher {
 
     @OneToMany
     @JoinColumn(name = "publisher_id")
+    @ToString.Exclude
     private Set<Book> books = new HashSet<>();
 }

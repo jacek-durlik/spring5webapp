@@ -21,5 +21,6 @@ public class Author {
     @NonNull
     private String lastName;
     @ManyToMany(mappedBy = "authors")
+    @ToString.Exclude
     private Set<Book> books = new HashSet<>();
 }
